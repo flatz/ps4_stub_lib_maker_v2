@@ -3,7 +3,11 @@
 !lib/libc/libc_stub.lib
 !lib/libc/libc_stub_weak.lib
 
+*.prx
 *.a
 *.lib
 
+*.map
+
 *.o
+*.obj
