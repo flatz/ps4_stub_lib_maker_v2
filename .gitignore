@@ -1,0 +1,9 @@
+!lib/libc/libc_stub.a
+!lib/libc/libc_stub_weak.a
+!lib/libc/libc_stub.lib
+!lib/libc/libc_stub_weak.lib
+
+*.a
+*.lib
+
+*.o
