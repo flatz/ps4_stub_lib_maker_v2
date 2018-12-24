@@ -1,0 +1,10 @@
+fun:
+	sceUsbStorageGetDeviceInfo
+	sceUsbStorageGetDeviceList
+	sceUsbStorageInit
+	sceUsbStorageIsExist
+	sceUsbStorageRegisterCallback
+	sceUsbStorageRequestMap
+	sceUsbStorageRequestUnmap
+	sceUsbStorageTerm
+	sceUsbStorageUnregisterCallback
