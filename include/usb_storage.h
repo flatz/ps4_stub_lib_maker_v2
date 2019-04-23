@@ -2,6 +2,7 @@
 
 #include "prerequisites.h"
 
+#define SCE_SYSMODULE_USB_STORAGE 0xD5
 
 #ifdef __cplusplus
 extern "C" {
