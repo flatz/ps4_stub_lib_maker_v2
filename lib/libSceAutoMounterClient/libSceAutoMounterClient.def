@@ -1,0 +1,6 @@
+fun:
+	sceAutoMounterClientInit
+	sceAutoMounterClientGetUsbDeviceList
+	sceAutoMounterClientGetUsbDeviceInfo
+	sceAutoMounterClientRegisterCallback
+	sceAutoMounterClientUnregisterCallback
