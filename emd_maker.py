@@ -21,7 +21,8 @@ tls_names = []
 
 with open(desc_file_path, 'r') as f:
 	marker = None
-	marker_regexp = re.compile('^([A-Za-z0-9_]+)\s*:$', re.IGNORECASE)
+	marker_regexp = re.compile(r'^([A-Za-z0-9_]+)\s*:$', re.IGNORECASE)
+	name_with_nid_regexp = re.compile(r'^([A-Za-z0-9_]+)\s*=\s*(0[xX][A-Fa-f0-9]+)\s*$')
 	for line in f.readlines():
 		line = line.rstrip('\r\n').strip()
 		if len(line) == 0:
@@ -32,6 +33,10 @@ with open(desc_file_path, 'r') as f:
 		if matches is not None:
 			marker = matches.group(1)
 			continue
+		matches = name_with_nid_regexp.match(line)
+		if matches is not None:
+			name, nid = matches.group(1), matches.group(2)
+			line = '{0}__nid_{1}'.format(name, nid)
 		if marker == 'fun':
 			fun_names.append(line)
 		elif marker == 'obj':

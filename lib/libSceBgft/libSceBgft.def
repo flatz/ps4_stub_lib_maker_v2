@@ -1,0 +1,41 @@
+fun:
+	sceBgftServiceInit
+	sceBgftServiceTerm
+	sceBgftServiceDownloadFindTaskByContentId
+	sceBgftServiceDownloadFindActivePatchTask
+	sceBgftServiceDownloadFindActivePupTask
+	sceBgftServiceDownloadStartTask
+	sceBgftServiceDownloadStartTaskAll
+	sceBgftServiceDownloadPauseTask
+	sceBgftServiceDownloadPauseTaskAll
+	sceBgftServiceDownloadResumeTask
+	sceBgftServiceDownloadResumeTaskAll
+	sceBgftServiceDownloadStopTask
+	sceBgftServiceDownloadStopTaskAll
+	sceBgftServiceDownloadGetProgress
+
+	sceBgftInitialize = 0x059D28951F036B48
+	sceBgftFinalize = 0x3830B8FE63A2C25D
+
+	sceBgftDownloadRegisterTask = 0x5551723BCF78E032
+	sceBgftDownloadRegisterTaskByStorageEx = 0x9DDFB40C4382EBC0
+	sceBgftDownloadRegisterTaskStoreWithErrorInfo = 0x6870D85DB2167B2E
+	sceBgftDownloadUnregisterTask = 0xEA2AD4E1DD469777
+	sceBgftDownloadReregisterTaskPatch = 0x01F0CB6D39C8B187
+
+	sceBgftDownloadStartTask = 0x1D10C72CC03D63BB
+	sceBgftDownloadStopTask = 0x9E8B15FBCBFE03DA
+	sceBgftDownloadPauseTask = 0x6F250FD2486380B0
+	sceBgftDownloadResumeTask = 0xABEA5313E6271A48
+
+	sceBgftDownloadGetTaskInfo = 0xB83C07C30A13EAB8
+
+	sceBgftDownloadGetProgress = 0xE6DC71FB0D0760EB
+	sceBgftDownloadGetPatchProgress = 0x519A074D681E23D2
+	sceBgftDownloadGetPlayGoProgress = 0x6D35D10196609109
+	sceBgftDownloadGetGameAndGameAcProgress = 0xEB5D22C092AB186A
+
+	sceBgftDownloadFindActiveGameAndGameAcTask = 0xBE71CB828A1DD8B0
+	sceBgftDownloadFindActiveTask = 0x170A4AEFE4310658
+
+	sceBgftDebugDownloadRegisterPkg = 0x6D209BB41CD09C40
